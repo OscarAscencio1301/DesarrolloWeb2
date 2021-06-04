@@ -8,3 +8,5 @@
 * Linterna Verde
 * AquaMan
 * La mujer Maravilla
+* Nick Fury
+  
