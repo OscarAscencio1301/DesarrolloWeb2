@@ -1,6 +1,6 @@
 ## Proyecto de Sitio Web
 
-Es un proyecto con las sigueitnes Tecnologiás
+Es un proyecto con las siguientes Tecnologías
 
 * HTML5
 * CSS3
@@ -9,3 +9,4 @@ Es un proyecto con las sigueitnes Tecnologiás
 
 1. EcmaScript 6
 2. React JS
+3. NodeJS
