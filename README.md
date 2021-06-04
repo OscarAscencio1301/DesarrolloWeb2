@@ -1,7 +1,6 @@
-## Pyecto de Stio Web
+## Proyecto de Sitio Web
 
 Es un proyecto con las sigueitnes Tecnologiás
-
 
 * HTML5
 * CSS3
