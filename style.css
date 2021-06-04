@@ -1,0 +1,721 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+:root {
+    --gradiente: (rgba(131, 7, 131, 0.527), rgba(212, 8, 212, 0.692));
+    --principal: rgb(106, 10, 233);
+    --secundario: rgba(148, 148, 148, 0.493);
+    --cajas: rgba(141, 29, 175, 0.473);
+    --cajas2: rgba(12, 165, 185, 0.473);
+    --cajas3: rgba(32, 185, 12, 0.473);
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+    /* overflow: hidden; */
+}
+
+header {
+    background-image: linear-gradient(rgba(65, 5, 65, 0.425), rgba(212, 8, 212, 0.171)), url("wes-hicks-4-EeTnaC1S4-unsplash.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: 20% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+.nav {
+    padding: 50px 0 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.nav li {
+    font-size: 2rem;
+    list-style: none;
+    color: white;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: var(--principal);
+}
+
+.textos {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textos h1 {
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 2rem 0;
+}
+
+.textos p {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+}
+
+.onda {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* Seccion 1 Sobre Nosotros */
+
+.titulo-section {
+    padding: 0;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--principal);
+    margin-bottom: 2rem;
+}
+
+.relatos-imagen {
+    width: 90%;
+}
+
+.titulo-relato {
+    margin: 4rem 0 0 0;
+    width: 80%;
+}
+
+.texto-relato {
+    width: 90%;
+    text-align: justify;
+    font-size: 2rem;
+}
+
+.section2 {
+    background-color: var(--secundario);
+    width: 100%;
+}
+
+.section2-imagen {
+    object-fit: cover;
+    display: block;
+    height: 300px;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+    border-radius: 20px;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.534);
+}
+
+.precio1 {
+    width: 80%;
+    background-color: var(--cajas);
+    text-align: center;
+    color: white;
+    height: 70vh;
+    display: block;
+    margin: 0 auto 3rem auto;
+    border-radius: 20px;
+}
+
+.precio2 {
+    width: 80%;
+    background-color: var(--cajas2);
+    text-align: center;
+    color: white;
+    height: 70vh;
+    display: block;
+    margin: 0 auto 3rem auto;
+    border-radius: 20px;
+}
+
+.precio3 {
+    width: 80%;
+    background-color: var(--cajas3);
+    text-align: center;
+    color: white;
+    height: 70vh;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.seccion3-titulo {
+    font-size: 5rem;
+    font-weight: bold;
+    padding-top: 3rem;
+}
+
+.costo {
+    font-size: 3rem;
+    font-weight: 100;
+    margin-bottom: 4rem;
+}
+
+.beneficio {
+    font-size: 3rem;
+    margin: 2rem auto;
+    padding-bottom: 1rem;
+    font-weight: lighter;
+    display: block;
+    width: 90%;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+.boton {
+    background-color: white;
+    display: block;
+    width: 60%;
+    margin: 5rem auto;
+    height: 40px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+.section4 {
+    background-color: var(--cajas);
+    width: 100%;
+    padding: 2rem;
+}
+
+.section4 .titulo-section {
+    color: white;
+}
+
+.form__caja {
+    color: rgba(128, 128, 128, 0.384);
+    width: 95%;
+    display: block;
+    background-color: transparent;
+    height: 50px;
+    margin: 2rem auto;
+    border: 1px solid white;
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.form__caja::placeholder {
+    color: rgba(128, 128, 128, 0.384);
+}
+
+.area {
+    height: 20rem;
+}
+
+.form__caja[type="submit"] {
+    width: 50%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__caja[type="submit"]:hover {
+    background-color: var(--principal);
+    color: white;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 400px) {
+    .textos {
+        width: 70%;
+    }
+    /* Seccion 1 Sobre Nosotros */
+    .titulo-relato {
+        margin: 1rem auto;
+        text-align: center;
+    }
+    .texto-relato {
+        width: 90%;
+        display: block;
+        text-align: justify;
+        margin: auto;
+        font-size: 2rem;
+    }
+    .precio1 {
+        width: 80%;
+        background-color: var(--cajas);
+        text-align: center;
+        color: white;
+        display: block;
+        margin: 0 auto 3rem auto;
+        border-radius: 20px;
+    }
+    .precio2 {
+        width: 80%;
+        background-color: var(--cajas2);
+        text-align: center;
+        color: white;
+        display: block;
+        margin: 0 auto 3rem auto;
+        border-radius: 20px;
+    }
+    .precio3 {
+        width: 80%;
+        background-color: var(--cajas3);
+        text-align: center;
+        color: white;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .seccion3-titulo {
+        font-size: 5rem;
+        font-weight: bold;
+        padding-top: 3rem;
+    }
+    .costo {
+        font-size: 3rem;
+        font-weight: 100;
+        margin-bottom: 4rem;
+    }
+    .beneficio {
+        font-size: 3rem;
+        margin: 2rem auto;
+        padding-bottom: 1rem;
+        font-weight: lighter;
+        display: block;
+        width: 90%;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    .boton {
+        background-color: white;
+        display: block;
+        width: 60%;
+        margin: 1rem auto;
+        height: 40px;
+        padding: 1rem;
+        text-decoration: none;
+        font-size: 2rem;
+        border-radius: 20px;
+    }
+    .section4 {
+        background-color: var(--cajas);
+        width: 100%;
+        padding: 2rem;
+    }
+    .section4 .titulo-section {
+        color: white;
+    }
+    .form__caja {
+        color: rgba(128, 128, 128, 0.384);
+        width: 95%;
+        display: block;
+        background-color: transparent;
+        height: 50px;
+        margin: 2rem auto;
+        border: 1px solid white;
+        text-align: left;
+        padding: 1rem 0;
+    }
+    .form__caja::placeholder {
+        color: rgba(128, 128, 128, 0.384);
+    }
+    .area {
+        height: 20rem;
+    }
+    .form__caja[type="submit"] {
+        width: 50%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .form__caja[type="submit"]:hover {
+        background-color: var(--principal);
+        color: white;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav {
+        padding: 50px 0 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: rem;
+    }
+    .nav li {
+        font-size: 3rem;
+        list-style: none;
+        color: white;
+    }
+    .nav a {
+        text-decoration: none;
+        color: white;
+    }
+    .nav a:hover {
+        text-decoration: underline;
+        color: var(--principal);
+    }
+    .textos {
+        height: 70%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .textos h1 {
+        color: white;
+        font-size: 4rem;
+        text-align: center;
+        font-weight: bold;
+        margin: 2rem 0;
+    }
+    .textos p {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 100;
+        font-style: italic;
+        text-align: center;
+    }
+    .onda {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    /* Seccion 1 Sobre Nosotros */
+    .titulo-section {
+        padding: 0;
+        text-align: center;
+        font-size: 4rem;
+        color: var(--principal);
+        margin-bottom: 2rem;
+    }
+    .relatos-imagen {
+        width: 90%;
+    }
+    .titulo-relato {
+        margin: 4rem 0 0 0;
+        width: 80%;
+    }
+    .texto-relato {
+        width: 90%;
+        text-align: justify;
+        font-size: 3rem;
+    }
+    .section2 {
+        background-color: var(--secundario);
+        width: 100%;
+    }
+    .section2-imagen {
+        object-fit: cover;
+        display: block;
+        height: 450px;
+        width: 90%;
+        margin: 2rem auto 0 auto;
+        border-radius: 20px;
+        box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.534);
+    }
+    .precio1 {
+        width: 80%;
+        background-color: var(--cajas);
+        text-align: center;
+        color: white;
+        height: 70vh;
+        display: block;
+        margin: 0 auto 3rem auto;
+        border-radius: 20px;
+    }
+    .precio2 {
+        width: 80%;
+        background-color: var(--cajas2);
+        text-align: center;
+        color: white;
+        height: 70vh;
+        display: block;
+        margin: 0 auto 3rem auto;
+        border-radius: 20px;
+    }
+    .precio3 {
+        width: 80%;
+        background-color: var(--cajas3);
+        text-align: center;
+        color: white;
+        height: 70vh;
+        display: block;
+        margin: auto;
+        border-radius: 20px;
+    }
+    .seccion3-titulo {
+        font-size: 7rem;
+        font-weight: bold;
+        padding-top: 3rem;
+    }
+    .costo {
+        font-size: 4rem;
+        font-weight: 100;
+        margin-bottom: 4rem;
+    }
+    .beneficio {
+        font-size: 4rem;
+        margin: 2rem auto;
+        padding-bottom: 2rem;
+        font-weight: lighter;
+        display: block;
+        width: 90%;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    .boton {
+        background-color: white;
+        display: block;
+        width: 60%;
+        margin: 5rem auto;
+        height: 5rem;
+        padding: 1.5rem;
+        text-decoration: none;
+        font-size: 3rem;
+        border-radius: 20px;
+    }
+    .section4 {
+        background-color: var(--cajas);
+        width: 100%;
+        padding: 2rem;
+    }
+    .section4 .titulo-section {
+        color: white;
+    }
+    .form__caja {
+        color: rgba(128, 128, 128, 0.384);
+        width: 95%;
+        display: block;
+        background-color: transparent;
+        height: 50px;
+        margin: 2rem auto;
+        border: 1px solid white;
+        text-align: left;
+        padding: 1rem 0;
+    }
+    .form__caja::placeholder {
+        color: rgba(128, 128, 128, 0.384);
+        font-size: 2rem;
+    }
+    .area {
+        height: 20rem;
+        font-size: 2rem;
+    }
+    .form__caja[type="submit"] {
+        width: 50%;
+        margin-bottom: 2rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .form__caja[type="submit"]:hover {
+        background-color: var(--principal);
+        color: white;
+    }
+}
+
+@media (min-width: 992px) {
+    .nav {
+        padding: 50px 0 0 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    .nav li {
+        font-size: 3rem;
+        list-style: none;
+        color: white;
+    }
+    .nav a {
+        text-decoration: none;
+        color: white;
+    }
+    .nav a:hover {
+        text-decoration: underline;
+        color: var(--principal);
+    }
+    .textos {
+        height: 70%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .textos h1 {
+        color: white;
+        font-size: 5rem;
+        text-align: center;
+        font-weight: bold;
+        margin: 2rem 0;
+    }
+    .textos p {
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 100;
+        font-style: italic;
+        text-align: center;
+    }
+    .onda {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    /* Seccion 1 Sobre Nosotros */
+    .titulo-section {
+        padding: 0;
+        text-align: center;
+        font-size: 3rem;
+        color: var(--principal);
+        margin-bottom: 2rem;
+    }
+    .relatos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .relatos-imagen {
+        flex: 0 0 10%;
+        width: 40%;
+    }
+    .relato1 {
+        flex: 0 0 60%;
+    }
+    .titulo-relato {
+        margin: 4rem 0 0 0;
+        width: 80%;
+    }
+    .texto-relato {
+        width: 90%;
+        text-align: justify;
+        font-size: 2rem;
+    }
+    .portafolio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .item {
+        flex: 0 0 calc(33.3% - 2rem);
+    }
+    .precios {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+    .precio1,
+    .precio2,
+    .precio3 {
+        flex: 0 0 30%;
+    }
+    .precio1 {
+        width: 80%;
+        background-color: var(--cajas);
+        text-align: center;
+        color: white;
+        /* display: block; */
+        margin: 0 auto 3rem auto;
+        border-radius: 20px;
+        height: 100vh;
+    }
+    .seccion3-titulo {
+        font-size: 5rem;
+        font-weight: bold;
+        padding-top: 3rem;
+    }
+    .costo {
+        font-size: 3rem;
+        font-weight: 100;
+        margin-bottom: 4rem;
+    }
+    .beneficio {
+        font-size: 3rem;
+        margin: 2rem auto;
+        /* padding-bottom: 1rem; */
+        font-weight: lighter;
+        /* display: block; */
+        width: 90%;
+        text-align: center;
+        border-bottom: 1px solid white;
+    }
+    .boton {
+        background-color: white;
+        /* display: block; */
+        width: 60%;
+        margin: 5rem auto;
+        height: 40px;
+        /* padding: 10px; */
+        text-decoration: none;
+        font-size: 2rem;
+        border-radius: 20px;
+    }
+    .section4 {
+        background-color: var(--cajas);
+        width: 100%;
+        padding: 2rem;
+    }
+    .section4 .titulo-section {
+        color: white;
+    }
+    .form__caja {
+        color: rgba(128, 128, 128, 0.384);
+        width: 95%;
+        display: block;
+        background-color: transparent;
+        height: 50px;
+        margin: 2rem auto;
+        border: 1px solid white;
+        text-align: left;
+        padding: 1rem 0;
+    }
+    .form__caja::placeholder {
+        color: rgba(128, 128, 128, 0.384);
+    }
+    .area {
+        height: 20rem;
+    }
+    .form__caja[type="submit"] {
+        width: 50%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .form__caja[type="submit"]:hover {
+        background-color: var(--principal);
+        color: white;
+    }
+}
